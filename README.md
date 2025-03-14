@@ -37,6 +37,7 @@ The following algorithms were tested:
     </td>
   </tr>
 </table> 
+
 #### Why Using This Path?
 
 The chosen path is designed to evaluate **purely reactive algorithms** without any control mechanisms (e.g., PID, Pure Pursuit).
