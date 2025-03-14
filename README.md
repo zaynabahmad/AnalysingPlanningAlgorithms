@@ -2,7 +2,7 @@
 
 ## 1.  **Testing Reactive Algorithms for Mobile Robot Navigation**
 
-This project focuses on testing different **reactive navigation algorithms** for a mobile robot **without velocity control mechanisms** like PID or Pure Pursuit. The goal is to evaluate how the robot reacts to **track with  conditions** using only **LiDAR data** for control.
+This project focuses on testing different **reactive navigation algorithms** for a mobile robot **without velocity control mechanisms** like PID or Pure Pursuit. The goal is to evaluate how the robot reacts to **track with different conditions** using only **LiDAR data** for control.
 
 ## **Tested Algorithms**
 
