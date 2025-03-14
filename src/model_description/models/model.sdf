@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name='empty'>
+    <physics name='1ms' type='ode'>  
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='ignition-gazebo-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='ignition-gazebo-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='ignition-gazebo-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='ignition-gazebo-contact-system'/>
+    <plugin filename="libignition-gazebo-imu-system.so"
+        name="ignition::gazebo::systems::Imu">
+    </plugin>
+    <plugin
+      filename="ignition-gazebo-sensors-system"
+      name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+        <gui fullscreen='false'>
+      <plugin name='3D View' filename='GzScene3D'>
+        <ignition-gui>
+          <title>3D View</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='string' key='state'>docked</property>
+        </ignition-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <background_color>0.5 0.8 0.95</background_color>
+        <camera_follow>
+          <target>prius_hybrid</target>
+          <p_gain>0.5</p_gain>
+          <offset>0.5 5 2</offset>
+        </camera_follow>
+      </plugin>
+
+      <!-- <plugin filename="InteractiveViewControl" name="Interactive view control">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </ignition-gui>
+      </plugin> -->
+
+      <plugin name='World control' filename='WorldControl'>
+        <ignition-gui>
+          <title>World control</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='bool' key='resizable'>false</property>
+          <property type='double' key='height'>72</property>
+          <property type='double' key='width'>121</property>
+          <property type='double' key='z'>1</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='left' target='left'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </ignition-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>true</start_paused>
+      </plugin>
+      <plugin name='World stats' filename='WorldStats'>
+        <ignition-gui>
+          <title>World stats</title>
+          <property type='bool' key='showTitleBar'>false</property>
+          <property type='bool' key='resizable'>false</property>
+          <property type='double' key='height'>110</property>
+          <property type='double' key='width'>290</property>
+          <property type='double' key='z'>1</property>
+          <property type='string' key='state'>floating</property>
+          <anchors target='3D View'>
+            <line own='right' target='right'/>
+            <line own='bottom' target='bottom'/>
+          </anchors>
+        </ignition-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+      <!-- <plugin name='dis' filename='ImageDisplay'>
+        <ignition-gui>
+          <property key='state' type='string'>docked</property>
+        </ignition-gui>
+        <topic>front_camera</topic>
+      </plugin> -->
+      <!-- <plugin name='Teleop' filename='Teleop'>
+        <ignition-gui>
+          <property type='string' key='state'>docked</property>
+        </ignition-gui>
+        <topic>/cmd_vel</topic>
+      </plugin>
+    
+    <plugin filename="EntityTree" name="Entity tree">
+    </plugin> -->
+
+    <!-- <plugin filename="CameraTracking" name="Camera Tracking">
+        <ignition-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </ignition-gui>
+    </plugin> -->
+    </gui>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+      <!-- TRACK MODEL: A static model containing walls forming the track -->
+        <model name="zigzag_track">
+      <!-- Make the track static so it doesn't fall or move -->
+      <static>true</static>
+      <link name="track">
+
+
+      <!-- ================================
+           Segment 1: 2.5 m straight
+           Orientation: 0° (along X-axis)
+           Track width: 1 m
+           Left & right walls
+         ================================ -->
+
+      <!-- Left Wall, Segment 1 -->
+      <!-- Center of segment at x=1.25, offset +0.5 in y -->
+        <pose>1.0 0.5 0.5 0 0 0</pose>
+        <!-- Visual only, no collision -->
+        <visual name="left_wall_seg1_visual">
+          <geometry>
+            <!-- 2.5 m long, 0.1 m thick, 1 m high -->
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Right Wall, Segment 1 -->
+      <!-- Center of segment at x=1.25, offset -0.5 in y -->
+      <link name="right_wall_seg1">
+        <pose>1.0 -0.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>3.0 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- ================================
+           Segment 2: 2.5 m straight
+           Orientation: 45°
+           Start pivot at (2.5, 0)
+         ================================ -->
+
+      <!-- For a 2.5 m segment at 45°:
+           Center is pivot + 1.25*(cos 45, sin 45) => ~ (3.3839, 0.8839)
+           Then offset ±0.5 perpendicular to that direction:
+             Left offset => -0.3536, +0.3536
+             Right offset => +0.3536, -0.3536
+      -->
+
+      <!-- Left Wall, Segment 2 -->
+      <link name="left_wall_seg2">
+        <!-- final = (3.3839, 0.8839) + (-0.3536, +0.3536) = (3.0303, 1.2375) -->
+        <pose>3.0003 1.2875 0.5 0 0 0.7854</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.2 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+
+      <!-- Right Wall, Segment 2 -->
+      <link name="right_wall_seg2">
+        <!-- final = (3.3839, 0.8839) + (0.3536, -0.3536) = (3.7375, 0.5303) -->
+        <pose>3.6625 0.6053 0.5 0 0 0.7854</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>3.25 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- ================================
+           Segment 3: 2.5 m straight
+           Orientation: 90° (45° more)
+           Start pivot at end of Segment 2
+         ================================ -->
+
+      <!-- End of seg2 is pivot + 2.5*(cos 45, sin 45) => ~ (4.2678, 1.7678)
+           Center is pivot + 1.25*(cos 90, sin 90) => + (0, 1.25)
+           => (4.2678, 3.0178)
+           Then offset ±0.5 perpendicular to 90°:
+             Left => (-0.5, 0)
+             Right => (+0.5, 0)
+      -->
+
+      <!-- Left Wall, Segment 3 -->
+      <link name="left_wall_seg3">
+        <!-- final = (4.2678, 3.0178) + (-0.5, 0) = (3.7678, 3.0178) -->
+        <pose>3.7678 3.2678 0.5 0 0 1.5708</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Right Wall, Segment 3 -->
+      <link name="right_wall_seg3">
+        <!-- final = (4.2678, 3.0178) + (0.5, 0) = (4.7678, 3.0178) -->
+        <pose>4.7678 3.0178 0.5 0 0 1.5708</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>  
+  
+  <model name="turtlebot3_burger">  
+
+    <link name="base">
+
+      <inertial>
+        <pose>-0.032 0 0.070 0 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>1.0</mass>
+      </inertial>
+
+      <collision name="base_collision">
+        <pose>-0.032 0 0.070 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.140 0.140 0.140</size>
+          </box>
+        </geometry>
+      </collision>
+
+     <visual name="base_visual">
+        <pose>-0.032 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/burger_base.stl</uri>
+            <scale>.001 .001 .001</scale>
+          </mesh>
+        </geometry>
+         <material>
+            <ambient>0.9 0.1 0 1</ambient>
+            <diffuse>0.9 0.1 0 1</diffuse>
+            <specular>0.9 0.2 0.2 1</specular>
+            <emissive>0.9 0 0.1 1</emissive>
+          </material>
+      </visual>
+
+      <collision name="caster_collision">
+        <pose>-0.081 0 -0.004 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005000</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100000.0</mu>
+              <mu2>100000.0</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+    <sensor name="imu_sensor" type="imu">
+    <update_rate>50</update_rate>
+    <topic>/imu</topic>
+    <imu>
+      <angular_velocity>
+        <x>true</x>
+        <y>true</y>
+        <z>true</z>
+      </angular_velocity>
+      <linear_acceleration>
+        <x>true</x>
+        <y>true</y>
+        <z>true</z>
+      </linear_acceleration>
+      <orientation>
+        <x>true</x>
+        <y>true</y>
+        <z>true</z>
+      </orientation>
+    </imu>
+  </sensor>
+    </link>
+
+  <link name="lidar">
+    <inertial>
+      <pose>-0.020 0 0.161 0 0 0</pose>
+      <inertia>
+        <ixx>0.001</ixx>
+        <ixy>0.000</ixy>
+        <ixz>0.000</ixz>
+        <iyy>0.001</iyy>
+        <iyz>0.000</iyz>
+        <izz>0.001</izz>
+      </inertia>
+      <mass>0.125</mass>
+    </inertial>
+
+    <collision name="lidar_sensor_collision">
+        <pose>-0.020 0 0.161 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.0508</radius>
+            <length>0.055</length>
+          </cylinder>
+        </geometry>
+      </collision>
+
+      <visual name="lidar_sensor_visual">
+        <pose>-0.032 0 0.171 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/lds.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+            <ambient>0.5 0.75 0 1</ambient>
+            <diffuse>0.7 0.9 0 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <emissive>0.1 0 0.1 1</emissive>
+          </material>
+      </visual>
+
+      <sensor name="hls_lfcd_lds" type="gpu_ray">
+        <always_on>1</always_on>
+        <topic>/scan</topic>
+        <visualize>0</visualize>
+        <pose>-0.032 0 0.171 0 0 0</pose>
+        <update_rate>1800</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>0.000000</min_angle>
+              <max_angle>6.280000</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.150000</min>
+            <max>3.5</max>
+            <resolution>0.015000</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+      </sensor>
+    </link>
+
+    <link name="left_wheel">
+
+      <inertial>
+        <pose>0 0.08 0.023 -1.57 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.1</mass>
+      </inertial>
+
+      <collision name="left_wheel_collision">
+        <pose>0 0.08 0.023 -1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.033</radius>
+            <length>0.018</length>
+          </cylinder>
+        </geometry>
+          <surface>
+          <!-- This friction pamareter don't contain reliable data!! -->
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="left_wheel_visual">
+        <pose>0 0.08 0.023 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/left_tire.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.1 0.1 0.1 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0.1 0.1 0.1 1</emissive>
+          </material>
+      </visual>
+    </link>
+
+    <link name="right_wheel">
+
+      <inertial>
+        <pose>0.0 -0.08 0.023 -1.57 0 0</pose>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0.000</ixy>
+          <ixz>0.000</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0.000</iyz>
+          <izz>0.001</izz>
+        </inertia>
+        <mass>0.1</mass>
+      </inertial>
+    
+      <collision name="right_wheel_collision">
+        <pose>0.0 -0.08 0.023 -1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.033</radius>
+            <length>0.018</length>
+          </cylinder>
+        </geometry>
+          <surface>
+          <!-- This friction pamareter don't contain reliable data!! -->
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <visual name="right_wheel_visual">
+        <pose>0.0 -0.08 0.023 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>meshes/right_tire.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+          <material>
+            <ambient>0.1 0.1 0.1 1</ambient>
+            <diffuse>0.1 0.1 0.1 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <emissive>0.1 0.1 0.1 1</emissive>
+          </material>
+      </visual>
+    </link>
+
+    <joint name="left_wheel_joint" type="revolute">
+      <parent>base</parent>
+      <child>left_wheel</child>
+      <pose>0.0 0.08 0.023 -1.57 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="right_wheel_joint" type="revolute">
+      <parent>base</parent>
+      <child>right_wheel</child>
+      <pose>0.0 -0.08 0.023 -1.57 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="lidar_joint" type="fixed">
+      <parent>base</parent>
+      <child>lidar</child>
+      <pose>-0.032 0 0.171 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    
+
+   <!-- DIFF DRIVE PLUGIN / WHEELS CONTROLER -->
+    <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.6851</wheel_separation>
+      <wheel_radius>0.1651</wheel_radius>
+      <odom_publish_frequency>1</odom_publish_frequency>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base</child_frame_id>
+      <topic>/cmd_vel</topic>
+    </plugin>
+    
+  <static>0</static>
+  </model>
+  </world>
+</sdf>

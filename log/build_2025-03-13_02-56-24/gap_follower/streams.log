@@ -1,0 +1,38 @@
+[1.242s] Invoking command in '/home/zaynap/project_ws/src/gap_follower': PYTHONPATH=/home/zaynap/project_ws/build/gap_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gap_follower build --build-base /home/zaynap/project_ws/build/gap_follower/build install --record /home/zaynap/project_ws/build/gap_follower/install.log --single-version-externally-managed install_data
+[1.428s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.428s]   warnings.warn(msg)
+[1.587s] running egg_info
+[1.623s] writing ../../build/gap_follower/gap_follower.egg-info/PKG-INFO
+[1.624s] writing dependency_links to ../../build/gap_follower/gap_follower.egg-info/dependency_links.txt
+[1.624s] writing entry points to ../../build/gap_follower/gap_follower.egg-info/entry_points.txt
+[1.624s] writing requirements to ../../build/gap_follower/gap_follower.egg-info/requires.txt
+[1.624s] writing top-level names to ../../build/gap_follower/gap_follower.egg-info/top_level.txt
+[1.687s] reading manifest file '../../build/gap_follower/gap_follower.egg-info/SOURCES.txt'
+[1.690s] writing manifest file '../../build/gap_follower/gap_follower.egg-info/SOURCES.txt'
+[1.690s] running build
+[1.690s] running build_py
+[1.690s] copying gap_follower/wallfollower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.691s] copying gap_follower/optimized_gap_follower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.691s] copying gap_follower/__init__.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.692s] copying gap_follower/centerfollowing.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.692s] copying gap_follower/dualwallstatemachine.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.693s] copying gap_follower/optimized_gapfolloweSM.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.693s] copying gap_follower/naive_gap_follower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+[1.693s] running install
+[1.700s] running install_lib
+[1.743s] running install_data
+[1.743s] copying resource/gap_follower -> /home/zaynap/project_ws/install/gap_follower/share/ament_index/resource_index/packages
+[1.743s] copying package.xml -> /home/zaynap/project_ws/install/gap_follower/share/gap_follower
+[1.744s] running install_egg_info
+[1.786s] removing '/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower-0.0.0-py3.10.egg-info' (and everything under it)
+[1.786s] Copying ../../build/gap_follower/gap_follower.egg-info to /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower-0.0.0-py3.10.egg-info
+[1.788s] running install_scripts
+[2.038s] Installing centerfollowing script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.038s] Installing dualwallstatemachine script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.038s] Installing naive_gap_follower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.038s] Installing optimized_gap_follower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.039s] Installing optimized_gap_follower2 script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.039s] Installing optimized_gapfolloweSM script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.039s] Installing wallfollower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+[2.040s] writing list of installed files to '/home/zaynap/project_ws/build/gap_follower/install.log'
+[2.107s] Invoked command in '/home/zaynap/project_ws/src/gap_follower' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/gap_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gap_follower build --build-base /home/zaynap/project_ws/build/gap_follower/build install --record /home/zaynap/project_ws/build/gap_follower/install.log --single-version-externally-managed install_data

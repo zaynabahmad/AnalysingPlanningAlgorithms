@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: robot_bringup
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: zaynap
+Maintainer-email: zozaahmad203@gmail.com
+License: TODO: License declaration
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

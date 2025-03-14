@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="track_world">
+    <!-- Basic physics settings -->
+    <physics name="default_physics" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- Include a ground plane (optional, you may already have one) -->
+   <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+
+    <!-- TRACK MODEL: A static model containing walls forming the track -->
+        <model name="zigzag_track">
+      <!-- Make the track static so it doesn't fall or move -->
+      <static>true</static>
+
+      <!-- ================================
+           Segment 1: 2.5 m straight
+           Orientation: 0° (along X-axis)
+           Track width: 1 m
+           Left & right walls
+         ================================ -->
+
+      <!-- Left Wall, Segment 1 -->
+      <!-- Center of segment at x=1.25, offset +0.5 in y -->
+      <link name="left_wall_seg1">
+        <pose>1.0 0.5 0.5 0 0 0</pose>
+        <!-- Visual only, no collision -->
+        <visual name="visual">
+          <geometry>
+            <!-- 2.5 m long, 0.1 m thick, 1 m high -->
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Right Wall, Segment 1 -->
+      <!-- Center of segment at x=1.25, offset -0.5 in y -->
+      <link name="right_wall_seg1">
+        <pose>1.25 -0.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- ================================
+           Segment 2: 2.5 m straight
+           Orientation: 45°
+           Start pivot at (2.5, 0)
+         ================================ -->
+
+      <!-- For a 2.5 m segment at 45°:
+           Center is pivot + 1.25*(cos 45, sin 45) => ~ (3.3839, 0.8839)
+           Then offset ±0.5 perpendicular to that direction:
+             Left offset => -0.3536, +0.3536
+             Right offset => +0.3536, -0.3536
+      -->
+
+      <!-- Left Wall, Segment 2 -->
+      <link name="left_wall_seg2">
+        <!-- final = (3.3839, 0.8839) + (-0.3536, +0.3536) = (3.0303, 1.2375) -->
+        <pose>3.0003 1.2875 0.5 0 0 0.7854</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.2 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Right Wall, Segment 2 -->
+      <link name="right_wall_seg2">
+        <!-- final = (3.3839, 0.8839) + (0.3536, -0.3536) = (3.7375, 0.5303) -->
+        <pose>3.6625 0.6053 0.5 0 0 0.7854</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>3.25 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- ================================
+           Segment 3: 2.5 m straight
+           Orientation: 90° (45° more)
+           Start pivot at end of Segment 2
+         ================================ -->
+
+      <!-- End of seg2 is pivot + 2.5*(cos 45, sin 45) => ~ (4.2678, 1.7678)
+           Center is pivot + 1.25*(cos 90, sin 90) => + (0, 1.25)
+           => (4.2678, 3.0178)
+           Then offset ±0.5 perpendicular to 90°:
+             Left => (-0.5, 0)
+             Right => (+0.5, 0)
+      -->
+
+      <!-- Left Wall, Segment 3 -->
+      <link name="left_wall_seg3">
+        <!-- final = (4.2678, 3.0178) + (-0.5, 0) = (3.7678, 3.0178) -->
+        <pose>3.7678 3.2678 0.5 0 0 1.5708</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+
+      <!-- Right Wall, Segment 3 -->
+      <link name="right_wall_seg3">
+        <!-- final = (4.2678, 3.0178) + (0.5, 0) = (4.7678, 3.0178) -->
+        <pose>4.7678 3.0178 0.5 0 0 1.5708</pose>
+        <visual name="visual">
+          <geometry>
+            <box><size>2.5 0.1 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+  </world>
+</sdf>

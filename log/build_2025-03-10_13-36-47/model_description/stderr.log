@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/zaynap/project_ws/src/model_description/worlds": No such file or
+  directory.
+
+[0m

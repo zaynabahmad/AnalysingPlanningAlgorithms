@@ -1,0 +1,9 @@
+[console_scripts]
+best_path_recording = gap_follower.best_path_recording:main
+centerfollowing = gap_follower.centerfollowing:main
+dualwallstatemachine = gap_follower.dualwallstatemachine:main
+naive_gap_follower = gap_follower.naive_gap_follower:main
+optimized_gap_follower = gap_follower.optimized_gap_follower:main
+optimized_gap_follower2 = gap_follower.optimized_gap_follower2:main
+optimized_gapfolloweSM = gap_follower.optimized_gapfolloweSM:main
+wallfollower = gap_follower.wallfollower:main

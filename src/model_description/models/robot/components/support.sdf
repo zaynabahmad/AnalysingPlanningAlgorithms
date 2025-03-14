@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="wall">
+    <link name='column'>
+    <inertial>
+        <mass>1</mass>
+        <inertia>
+            <ixx>0.043333</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.043333</iyy>
+            <iyz>0</iyz>
+            <izz>0.08</izz>
+        </inertia>
+    </inertial>
+    <visual name='visual'>
+        <geometry>
+            <cylinder>
+                <radius>0.025</radius>
+                <length>0.15</length>
+            </cylinder>
+        </geometry>
+        <material>
+            <ambient>0 0.3 1.0 1</ambient>
+            <diffuse>0 0.3 1.0 1</diffuse>
+            <specular>0 0.3 1.0 1</specular>
+        </material>
+    </visual>
+    <collision name='collision'>
+        <geometry>
+            <cylinder>
+                <radius>0.025</radius>
+                <length>0.15</length>
+            </cylinder>
+        </geometry>
+    </collision>
+</link>
+  </model>
+</sdf>

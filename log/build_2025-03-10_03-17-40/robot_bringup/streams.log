@@ -1,0 +1,34 @@
+[1.408s] Invoking command in '/home/zaynap/project_ws/src/robot_bringup': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
+[1.739s] /home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+[1.739s]   warnings.warn(msg)
+[1.938s] running egg_info
+[1.965s] creating ../../build/robot_bringup/robot_bringup.egg-info
+[1.965s] writing ../../build/robot_bringup/robot_bringup.egg-info/PKG-INFO
+[1.966s] writing dependency_links to ../../build/robot_bringup/robot_bringup.egg-info/dependency_links.txt
+[1.966s] writing requirements to ../../build/robot_bringup/robot_bringup.egg-info/requires.txt
+[1.966s] writing top-level names to ../../build/robot_bringup/robot_bringup.egg-info/top_level.txt
+[1.966s] writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.026s] reading manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.027s] writing manifest file '../../build/robot_bringup/robot_bringup.egg-info/SOURCES.txt'
+[2.027s] running build
+[2.027s] running build_py
+[2.028s] creating /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup
+[2.028s] copying robot_bringup/__init__.py -> /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup
+[2.028s] running install
+[2.034s] running install_lib
+[2.064s] creating /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup
+[2.064s] copying /home/zaynap/project_ws/build/robot_bringup/build/lib/robot_bringup/__init__.py -> /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup
+[2.064s] byte-compiling /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup/__init__.py to __init__.cpython-310.pyc
+[2.065s] running install_data
+[2.065s] creating /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[2.065s] copying resource/robot_bringup -> /home/zaynap/project_ws/install/robot_bringup/share/ament_index/resource_index/packages
+[2.065s] copying package.xml -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup
+[2.065s] creating /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.065s] copying launch/bringup_robot_wallfollower.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.065s] copying launch/bringup_robot.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.066s] copying launch/bringup_robot_optimized.launch.py -> /home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/launch
+[2.066s] running install_egg_info
+[2.098s] Copying ../../build/robot_bringup/robot_bringup.egg-info to /home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages/robot_bringup-0.0.0-py3.10.egg-info
+[2.099s] running install_scripts
+[2.325s] writing list of installed files to '/home/zaynap/project_ws/build/robot_bringup/install.log'
+[2.386s] Invoked command in '/home/zaynap/project_ws/src/robot_bringup' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data

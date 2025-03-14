@@ -1,0 +1,40 @@
+/home/zaynap/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:270: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/gap_follower/gap_follower.egg-info/PKG-INFO
+writing dependency_links to ../../build/gap_follower/gap_follower.egg-info/dependency_links.txt
+writing entry points to ../../build/gap_follower/gap_follower.egg-info/entry_points.txt
+writing requirements to ../../build/gap_follower/gap_follower.egg-info/requires.txt
+writing top-level names to ../../build/gap_follower/gap_follower.egg-info/top_level.txt
+reading manifest file '../../build/gap_follower/gap_follower.egg-info/SOURCES.txt'
+writing manifest file '../../build/gap_follower/gap_follower.egg-info/SOURCES.txt'
+running build
+running build_py
+copying gap_follower/wallfollower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/optimized_gap_follower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/__init__.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/centerfollowing.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/dualwallstatemachine.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/optimized_gapfolloweSM.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+copying gap_follower/naive_gap_follower.py -> /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower
+running install
+running install_lib
+copying /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower/wallfollower.py -> /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower
+copying /home/zaynap/project_ws/build/gap_follower/build/lib/gap_follower/centerfollowing.py -> /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower
+byte-compiling /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower/wallfollower.py to wallfollower.cpython-310.pyc
+byte-compiling /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower/centerfollowing.py to centerfollowing.cpython-310.pyc
+running install_data
+copying resource/gap_follower -> /home/zaynap/project_ws/install/gap_follower/share/ament_index/resource_index/packages
+copying package.xml -> /home/zaynap/project_ws/install/gap_follower/share/gap_follower
+running install_egg_info
+removing '/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/gap_follower/gap_follower.egg-info to /home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages/gap_follower-0.0.0-py3.10.egg-info
+running install_scripts
+Installing centerfollowing script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing dualwallstatemachine script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing naive_gap_follower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing optimized_gap_follower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing optimized_gap_follower2 script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing optimized_gapfolloweSM script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+Installing wallfollower script to /home/zaynap/project_ws/install/gap_follower/lib/gap_follower
+writing list of installed files to '/home/zaynap/project_ws/build/gap_follower/install.log'

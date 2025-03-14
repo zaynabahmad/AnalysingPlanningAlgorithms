@@ -1,0 +1,100 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zaynap/project_ws/build/model_description
+-- Install configuration: ""
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.bash
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.ps1
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/_local_setup_util_ps1.py
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/_local_setup_util_sh.py
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.bash
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.ps1
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/COLCON_IGNORE
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.zsh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.sh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/.colcon_install_layout
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/setup.sh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/install/local_setup.zsh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05/events.log
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/build_2025-03-01_01-52-05/logger_all.log
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/latest_build
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/COLCON_IGNORE
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/log/latest
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/world.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build/.built_by
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//worlds/build/COLCON_IGNORE
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/robot
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/robot/components
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/robot/components/support.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.config
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/thumbnails/turtlebot3_burger.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/burger_base.stl
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/left_tire.stl
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/right_tire.stl
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/meshes/lds.stl
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/model.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall/1.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall/2.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall/3.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall/8.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/wall/4.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/model2.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/model.config
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails/2.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails/4.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails/3.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails/5.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/thumbnails/1.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/meshes
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/meshes/lidar_3d_v1.dae
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/meshes/lidar_3d_v1.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/model.sdf
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/materials
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/materials/textures
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//models/lidar/materials/textures/lidar_3d_v1.jpg
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//rviz
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description//rviz/model.rviz
+-- Installing: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/package_run_dependencies/model_description
+-- Installing: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/parent_prefix_path/model_description
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.sh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/ament_prefix_path.dsv
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.sh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/environment/path.dsv
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.bash
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.sh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.zsh
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/local_setup.dsv
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.dsv
+-- Installing: /home/zaynap/project_ws/install/model_description/share/ament_index/resource_index/packages/model_description
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig.cmake
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/cmake/model_descriptionConfig-version.cmake
+-- Installing: /home/zaynap/project_ws/install/model_description/share/model_description/package.xml

@@ -1,0 +1,239 @@
+[0.116s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.116s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7830f0aa5360>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7830f0b9a7a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7830f0b9a7a0>>, mixin_verb=('build',))
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.154s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zaynap/project_ws'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/gap_follower) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gap_follower' with type 'ros.ament_python' and name 'gap_follower'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/model_description) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/model_description' with type 'ros.ament_cmake' and name 'model_description'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_python' and name 'robot_bringup'
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.205s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/zaynap/project_ws/install
+[0.207s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 419 installed packages in /opt/ros/humble
+[0.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_target' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_clean_cache' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_clean_first' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'cmake_force_configure' from command line to 'False'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'ament_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'catkin_cmake_args' from command line to 'None'
+[0.270s] Level 5:colcon.colcon_core.verb:set package 'gap_follower' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'gap_follower' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zaynap/project_ws/build/gap_follower', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zaynap/project_ws/install/gap_follower', 'merge_install': False, 'path': '/home/zaynap/project_ws/src/gap_follower', 'symlink_install': False, 'test_result_base': None}
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'model_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.271s] DEBUG:colcon.colcon_core.verb:Building package 'model_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zaynap/project_ws/build/model_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zaynap/project_ws/install/model_description', 'merge_install': False, 'path': '/home/zaynap/project_ws/src/model_description', 'symlink_install': False, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zaynap/project_ws/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zaynap/project_ws/install/robot_bringup', 'merge_install': False, 'path': '/home/zaynap/project_ws/src/robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.272s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.273s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.274s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zaynap/project_ws/src/gap_follower' with build type 'ament_python'
+[0.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('gap_follower', 'ament_prefix_path')
+[0.276s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/ament_prefix_path.ps1'
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/ament_prefix_path.dsv'
+[0.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/ament_prefix_path.sh'
+[0.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.278s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.281s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zaynap/project_ws/src/model_description' with build type 'ament_cmake'
+[0.281s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zaynap/project_ws/src/model_description'
+[0.281s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.281s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.284s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/zaynap/project_ws/src/robot_bringup' with build type 'ament_python'
+[0.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'ament_prefix_path')
+[0.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.ps1'
+[0.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.dsv'
+[0.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/ament_prefix_path.sh'
+[0.287s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.287s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.523s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zaynap/project_ws/src/gap_follower'
+[0.523s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.523s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.530s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/home/zaynap/project_ws/install/gap_follower:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.804s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/zaynap/project_ws/src/robot_bringup'
+[0.805s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.805s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/home/zaynap/project_ws/install/gap_follower:/opt/ros/humble /usr/bin/cmake --build /home/zaynap/project_ws/build/model_description -- -j8 -l8
+[0.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zaynap/project_ws/build/model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/home/zaynap/project_ws/install/gap_follower:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
+[0.839s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model_description)
+[0.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zaynap/project_ws/build/model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zaynap/project_ws/install/robot_bringup:/home/zaynap/project_ws/install/gap_follower:/opt/ros/humble /usr/bin/cmake --install /home/zaynap/project_ws/build/model_description
+[0.842s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description' for CMake module files
+[0.843s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description' for CMake config files
+[0.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('model_description', 'cmake_prefix_path')
+[0.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.ps1'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.dsv'
+[0.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.sh'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/bin'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/lib/pkgconfig/model_description.pc'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/lib/python3.10/site-packages'
+[0.845s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/bin'
+[0.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.ps1'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zaynap/project_ws/install/model_description/share/model_description/package.dsv'
+[0.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.sh'
+[0.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.bash'
+[0.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.zsh'
+[0.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zaynap/project_ws/install/model_description/share/colcon-core/packages/model_description)
+[0.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model_description)
+[0.850s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description' for CMake module files
+[0.851s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description' for CMake config files
+[0.851s] Level 1:colcon.colcon_core.shell:create_environment_hook('model_description', 'cmake_prefix_path')
+[0.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.ps1'
+[0.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.dsv'
+[0.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/model_description/share/model_description/hook/cmake_prefix_path.sh'
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/bin'
+[0.852s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/lib/pkgconfig/model_description.pc'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/lib/python3.10/site-packages'
+[0.853s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/model_description/bin'
+[0.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.ps1'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zaynap/project_ws/install/model_description/share/model_description/package.dsv'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.sh'
+[0.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.bash'
+[0.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/model_description/share/model_description/package.zsh'
+[0.855s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zaynap/project_ws/install/model_description/share/colcon-core/packages/model_description)
+[1.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zaynap/project_ws/src/gap_follower': PYTHONPATH=/home/zaynap/project_ws/build/gap_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gap_follower build --build-base /home/zaynap/project_ws/build/gap_follower/build install --record /home/zaynap/project_ws/build/gap_follower/install.log --single-version-externally-managed install_data
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zaynap/project_ws/src/robot_bringup': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
+[2.081s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower' for CMake module files
+[2.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zaynap/project_ws/src/gap_follower' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/gap_follower/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gap_follower build --build-base /home/zaynap/project_ws/build/gap_follower/build install --record /home/zaynap/project_ws/build/gap_follower/install.log --single-version-externally-managed install_data
+[2.082s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower' for CMake config files
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower/lib'
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower/bin'
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower/lib/pkgconfig/gap_follower.pc'
+[2.083s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower/lib/python3.10/site-packages'
+[2.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('gap_follower', 'pythonpath')
+[2.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/pythonpath.ps1'
+[2.084s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/pythonpath.dsv'
+[2.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/hook/pythonpath.sh'
+[2.085s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/gap_follower/bin'
+[2.085s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gap_follower)
+[2.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/package.ps1'
+[2.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/package.dsv'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/package.sh'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/package.bash'
+[2.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/gap_follower/share/gap_follower/package.zsh'
+[2.088s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zaynap/project_ws/install/gap_follower/share/colcon-core/packages/gap_follower)
+[2.127s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup' for CMake module files
+[2.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zaynap/project_ws/src/robot_bringup' returned '0': PYTHONPATH=/home/zaynap/project_ws/build/robot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_bringup build --build-base /home/zaynap/project_ws/build/robot_bringup/build install --record /home/zaynap/project_ws/build/robot_bringup/install.log --single-version-externally-managed install_data
+[2.127s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup' for CMake config files
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup/lib'
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup/bin'
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[2.128s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup/lib/python3.10/site-packages'
+[2.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'pythonpath')
+[2.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.ps1'
+[2.129s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.dsv'
+[2.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/hook/pythonpath.sh'
+[2.130s] Level 1:colcon.colcon_core.environment:checking '/home/zaynap/project_ws/install/robot_bringup/bin'
+[2.130s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[2.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/package.ps1'
+[2.131s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/package.dsv'
+[2.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/package.sh'
+[2.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/package.bash'
+[2.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/zaynap/project_ws/install/robot_bringup/share/robot_bringup/package.zsh'
+[2.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zaynap/project_ws/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[2.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.133s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.139s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.139s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.139s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.150s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.150s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zaynap/project_ws/install/local_setup.ps1'
+[2.151s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zaynap/project_ws/install/_local_setup_util_ps1.py'
+[2.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zaynap/project_ws/install/setup.ps1'
+[2.154s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zaynap/project_ws/install/local_setup.sh'
+[2.154s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zaynap/project_ws/install/_local_setup_util_sh.py'
+[2.155s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zaynap/project_ws/install/setup.sh'
+[2.156s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zaynap/project_ws/install/local_setup.bash'
+[2.156s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zaynap/project_ws/install/setup.bash'
+[2.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zaynap/project_ws/install/local_setup.zsh'
+[2.158s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zaynap/project_ws/install/setup.zsh'
