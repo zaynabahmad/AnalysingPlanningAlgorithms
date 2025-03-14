@@ -30,10 +30,10 @@ The following algorithms were tested:
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/image.png" alt="trach" width="500" height = "600" >
+      <img src="images/image.png" alt="trach" width="500" height = "500" >
     </td>
     <td align="center">
-      <img src="images/2025-03-14T21:44:06.314567531.png" alt="robot with the trakc " width="500" height = "600" >
+      <img src="images/2025-03-14T21:44:06.314567531.png" alt="robot with the trakc " width="500" height = "500" >
     </td>
   </tr>
 </table> 
