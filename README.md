@@ -36,7 +36,7 @@ The following algorithms were tested:
       <img src="images/2025-03-14T21:44:06.314567531.png" alt="robot with the trakc " width="500" height = "500" >
     </td>
   </tr>
-</table> 
+</table>
 
 #### Why Using This Path?
 
@@ -130,7 +130,7 @@ A more advanced approach considering dynamics is needed for better performance.
 </table>
 
 The Center Following approach performs better than the Naïve Gap Following method in maintaining stability and staying centered.
-However, its RMSE (1.2453) and average deviation (0.9321) are higher because it completes the full path,
+However, its RMSE (8.856) and average deviation (6.7) are higher because it completes the full path,
 whereas the Naïve Gap Follower only accounts for the portion before crashing.
 Despite minor deviations after turns, smoothness remains more consistent with fewer sharp corrections.
 While the approach improves overall stability, some oscillations still occur when adjusting the trajectory.
